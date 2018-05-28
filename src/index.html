@@ -15,8 +15,21 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  <script src="http://maps.google.com/maps/api/js?key=AIzaSyC6D-BVztilVNbUQ6mv7YtSp_89-oF2P4E"></script>
-
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var uluru = {lat: -25.344, lng: 131.036};
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 4, center: uluru});
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({position: uluru, map: map});
+    }
+  </script>
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHNxJqNLAx27dFg50p_9q-0TBI1ruhlpM&callback=initMap">
+  </script>
   <!-- cordova.js required for cordova apps -->
   <script src="cordova.js"></script>
 
@@ -30,7 +43,6 @@
   </script>-->
 
   <link href="build/main.css" rel="stylesheet">
-
 </head>
 <body>
 
