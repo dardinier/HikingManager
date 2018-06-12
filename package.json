@@ -50,7 +50,7 @@
       "cordova-plugin-ionic": {
         "APP_ID": "2561acbd",
         "CHANNEL_NAME": "Master",
-        "UPDATE_METHOD": "background"
+        "UPDATE_METHOD": "auto"
       },
       "cordova-plugin-whitelist": {},
       "cordova-plugin-device": {},
