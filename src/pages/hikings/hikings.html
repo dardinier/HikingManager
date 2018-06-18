@@ -1,0 +1,13 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Randonnées</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <button menuClose="true" ion-item *ngFor="let hiking of hikings" (click)="onSelectHiking(hiking)">
+            {{ hiking.name }}
+        </button>
+    </ion-list>
+</ion-content>
