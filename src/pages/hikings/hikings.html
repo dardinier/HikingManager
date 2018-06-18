@@ -7,7 +7,13 @@
 <ion-content>
     <ion-list>
         <button menuClose="true" ion-item *ngFor="let hiking of hikings" (click)="onSelectHiking(hiking)">
-            {{ hiking.name }}
+            <div class="container">
+                <div [style.backgroundImage]="'url(' + hiking.image + ')'" class="image"></div>
+                <div class="texte">
+                    <h2>{{ hiking.name }}</h2>
+                    <h4>{{hiking.beginAdress}}</h4>
+                </div>
+            </div>
         </button>
     </ion-list>
 </ion-content>
