@@ -4,16 +4,23 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="hikings">
     <ion-list>
-        <button menuClose="true" ion-item *ngFor="let hiking of hikings" (click)="onSelectHiking(hiking)">
-            <div class="container">
-                <div [style.backgroundImage]="'url(' + hiking.image + ')'" class="image"></div>
-                <div class="texte">
-                    <h2>{{ hiking.name }}</h2>
-                    <h4>{{hiking.beginAdress}}</h4>
-                </div>
-            </div>
-        </button>
+        <div menuClose="true" ion-item *ngFor="let hiking of hikings" (click)="onSelectHiking(hiking)">
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-12 col-sm-6 col-md-3 col-lg-2>
+                        <div [style.backgroundImage]="'url(' + hiking.image + ')'" class="image"></div>
+                    </ion-col>
+                    <ion-col col-12 col-sm-6 col-md-9 col-lg-10>
+                        <div class="texte">
+                            <h2 class="name">{{ hiking.name }}</h2>
+                            <h4>{{hiking.beginAdress}}</h4>
+                            <p class="description">{{hiking.description}}</p>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
     </ion-list>
 </ion-content>

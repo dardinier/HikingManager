@@ -1,9 +1,6 @@
-.container {
-  display: flex;
-
+.hikings {
   .image {
     height: 200px;
-    width: 200px;
     background-size: cover;
     background-position: center;
     border-radius: 2px;
@@ -12,5 +9,9 @@
 
   .texte {
     padding-left: 20px;
+
+    .description {
+      word-wrap: break-spaces;
+    }
   }
 }

@@ -4,7 +4,17 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="hiking-detail">
     <div [style.backgroundImage]="'url(' + hiking.image + ')'" class="image"></div>
+    <div class="hiking">
+        <h1 class="hiking-name">{{hiking.name}}</h1>
+        <div class="adress">
+            <ion-icon ios="ios-pin" md="md-pin"></ion-icon>
+            <div class="adress-text">{{hiking.beginAdress}}</div>
+        </div>
+        <div class="description">
+            {{hiking.description}}
+        </div>
+    </div>
     <div id="map"></div>
 </ion-content>
