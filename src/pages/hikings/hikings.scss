@@ -1,6 +1,6 @@
 .hikings {
   .image {
-    height: 200px;
+    height: 100%;
     background-size: cover;
     background-position: center;
     border-radius: 2px;
@@ -10,8 +10,19 @@
   .texte {
     padding-left: 20px;
 
+    .name {
+      white-space: normal;
+      padding-bottom: 0.5rem;
+    }
+
+    .adress {
+      white-space: normal;
+      padding-bottom: 1rem;
+    }
+
     .description {
-      word-wrap: break-spaces;
+      white-space: normal;
+      max-height: 58px;
     }
   }
 }
