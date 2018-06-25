@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {Component} from '@angular/core';
+import {NavController} from 'ionic-angular';
 import {Hiking} from "../../model/hiking.model";
 
-import { HikingDetail } from '../hiking-detail/hiking-detail';
+import {HikingDetail} from '../hiking-detail/hiking-detail';
+import {Step} from "../../model/step.model";
 
 @Component({
     selector: 'app-hikings',
@@ -23,7 +24,9 @@ export class Hikings {
                 '4:30:00',
                 800,
                 'https://asal-lorient.fr/wp-content/uploads/2015/05/randonnee-pedestre-1024-1024x480.jpg',
-                [{ latitude: 48.862725, longitude: 2.287592000000018}]
+                [
+                    new Step(1, 3.287592000000018, 49.862725, 'Départ', '')
+                ]
             ),
             new Hiking(
                 1,
@@ -34,7 +37,9 @@ export class Hikings {
                 '3:00:00',
                 50,
                 'http://www.chamina-voyages.com/img/gammes/accompagne-0.jpg',
-                [{ latitude: 49.862725, longitude: 3.287592000000018}]
+                [
+                    new Step(1, 3.287592000000018, 49.862725, 'Départ', '')
+                ]
             ),
             new Hiking(
                 2,
@@ -45,12 +50,14 @@ export class Hikings {
                 '2:30:00',
                 450,
                 'https://www.blog-lifestyle.fr/wp-content/uploads/2018/04/comment-preparer-sa-randonnee.jpg',
-                [{ latitude: 36.862725, longitude: 8.287592000000018}]
+                [
+                    new Step(1, 3.287592000000018, 49.862725, 'Départ', '')
+                ]
             ),
         ];
     }
 
     onSelectHiking(hiking: Hiking) {
-        this.navCtrl.push(HikingDetail, { hiking: hiking });
+        this.navCtrl.push(HikingDetail, {hiking: hiking});
     }
 }

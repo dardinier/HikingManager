@@ -5,6 +5,7 @@ import {MyApp} from './app.component';
 
 import {Hikings} from '../pages/hikings/hikings';
 import {HikingDetail} from '../pages/hiking-detail/hiking-detail';
+import {Steps} from '../pages/steps/steps';
 
 // import {AgmCoreModule} from "@agm/core";
 
@@ -16,7 +17,8 @@ import { NeutronRatingModule } from 'neutron-star-rating';
     declarations: [
         MyApp,
         Hikings,
-        HikingDetail
+        HikingDetail,
+        Steps
     ],
     imports: [
         BrowserModule,
@@ -30,7 +32,8 @@ import { NeutronRatingModule } from 'neutron-star-rating';
     entryComponents: [
         MyApp,
         Hikings,
-        HikingDetail
+        HikingDetail,
+        Steps
     ],
     providers: [
         StatusBar,
