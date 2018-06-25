@@ -17,6 +17,7 @@
                             <h2 class="name">{{ hiking.name }}</h2>
                             <h4 class="adress">{{hiking.beginAdress}}</h4>
                             <p class="description">{{hiking.description}}</p>
+                            <neutron-rating [rating]=hiking.rate [starColour]="'#000000'" [readOnly]="true" [starSize]="1.2"></neutron-rating>
                         </div>
                     </ion-col>
                 </ion-row>

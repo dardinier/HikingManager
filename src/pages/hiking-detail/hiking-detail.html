@@ -8,10 +8,11 @@
     <div [style.backgroundImage]="'url(' + hiking.image + ')'" class="image"></div>
     <div class="hiking">
         <h1 class="hiking-name">{{hiking.name}}</h1>
-        <div class="adress">
+        <neutron-rating [rating]=hiking.rate [starColour]="'#000000'" [readOnly]="true" [starSize]="2"></neutron-rating>
+        <h4 class="adress">
             <ion-icon ios="ios-pin" md="md-pin"></ion-icon>
             <div class="adress-text">{{hiking.beginAdress}}</div>
-        </div>
+        </h4>
         <div class="description">
             {{hiking.description}}
         </div>

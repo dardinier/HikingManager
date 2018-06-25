@@ -10,6 +10,7 @@ import {HikingDetail} from '../pages/hiking-detail/hiking-detail';
 
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
+import { NeutronRatingModule } from 'neutron-star-rating';
 
 @NgModule({
     declarations: [
@@ -20,6 +21,7 @@ import {SplashScreen} from '@ionic-native/splash-screen';
     imports: [
         BrowserModule,
         IonicModule.forRoot(MyApp),
+        NeutronRatingModule
         // AgmCoreModule.forRoot({
         //     apiKey: 'AIzaSyBHNxJqNLAx27dFg50p_9q-0TBI1ruhlpM'
         // })
