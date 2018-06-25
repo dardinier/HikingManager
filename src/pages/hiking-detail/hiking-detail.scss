@@ -26,6 +26,22 @@
       }
     }
 
+    .duration {
+      display: flex;
+
+      .duration-text {
+        margin-left: 20px;
+      }
+    }
+
+    .heightDifference {
+      display: flex;
+
+      .heightDifference-text {
+        margin-left: 20px;
+      }
+    }
+
     .description {
       padding: 10px;
       text-align: center;

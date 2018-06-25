@@ -10,9 +10,17 @@
         <h1 class="hiking-name">{{hiking.name}}</h1>
         <neutron-rating [rating]=hiking.rate [starColour]="'#000000'" [readOnly]="true" [starSize]="2"></neutron-rating>
         <h4 class="adress">
-            <ion-icon ios="ios-pin" md="md-pin"></ion-icon>
+            <ion-icon name="md-pin"></ion-icon>
             <div class="adress-text">{{hiking.beginAdress}}</div>
         </h4>
+        <h5 class="duration">
+            <ion-icon name="alarm"></ion-icon>
+            <div class="duration-text">~{{hiking.duration}}</div>
+        </h5>
+        <h5 class="heightDifference">
+            <ion-icon name="trending-up"></ion-icon>
+            <div class="heightDifference-text">~{{hiking.heightDifference}}m</div>
+        </h5>
         <div class="description">
             {{hiking.description}}
         </div>

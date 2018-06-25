@@ -16,7 +16,17 @@
                         <div class="texte">
                             <h2 class="name">{{ hiking.name }}</h2>
                             <h4 class="adress">{{hiking.beginAdress}}</h4>
-                            <p class="description">{{hiking.description}}</p>
+                            <div class="description">{{hiking.description}}</div>
+                            <ion-grid style="padding: 5px 0 0 0">
+                                <ion-row>
+                                    <ion-col col-md-3 col-lg-2>
+                                        <p>~{{hiking.duration}}</p>
+                                    </ion-col>
+                                    <ion-col col-md-9 col-lg-10>
+                                        <p>~{{hiking.heightDifference}}m</p>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-grid>
                             <neutron-rating [rating]=hiking.rate [starColour]="'#000000'" [readOnly]="true" [starSize]="1.2"></neutron-rating>
                         </div>
                     </ion-col>

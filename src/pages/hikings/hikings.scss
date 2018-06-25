@@ -22,7 +22,9 @@
 
     .description {
       white-space: normal;
-      max-height: 58px;
+      max-height: 70px;
+      overflow: hidden;
+      font-size: 1.4rem;
     }
   }
 }

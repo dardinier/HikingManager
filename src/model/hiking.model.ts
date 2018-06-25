@@ -4,15 +4,19 @@ export class Hiking {
     description: string;
     beginAdress: string;
     rate: number;
+    duration: string;
+    heightDifference: number;
     image: string;
     steps: object;
 
-    constructor(id: number, name: string, description: string, beginAdress: string, rate: number, image: string, steps: object) {
+    constructor(id: number, name: string, description: string, beginAdress: string, rate: number, duration: string, heightDifference: number, image: string, steps: object) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.beginAdress = beginAdress;
         this.rate = rate;
+        this.duration = duration;
+        this.heightDifference = heightDifference;
         this.image = image;
         this.steps = steps;
     }
